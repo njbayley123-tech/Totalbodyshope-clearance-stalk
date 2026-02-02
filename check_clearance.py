@@ -52,7 +52,7 @@ if new_items:
     if len(new_items) > 15:
         msg_lines.append(f"(+ {len(new_items) - 15} more)")
 
-    send_notification("🔥 New Garage Sale Items!", "\n".join(msg_lines))
+    send_notification("New Garage Sale Items!", "\n".join(msg_lines))
 
 # Always update state so we don’t re-alert the same items
 save_seen(sorted(current))
